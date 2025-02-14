@@ -23,7 +23,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 1
-  controlID: 74
+  controlID: 381
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -352,7 +352,7 @@ MonoBehaviour:
       snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 0
       id: UnityEditor.SceneViewCameraOverlay
-      index: 11
+      index: 8
       layout: 4
       size: {x: 0, y: 0}
       sizeOverriden: 0
@@ -406,9 +406,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -1.1068435, y: -0.9455414, z: 58.031044}
+    m_Target: {x: -0.14027674, y: -2.251218, z: 12.314075}
     speed: 2
-    m_Value: {x: -1.1068435, y: -0.9455414, z: 58.031044}
+    m_Value: {x: -0.14027674, y: -2.251218, z: 12.314075}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -454,13 +454,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.28433233, y: 0.00201075, z: -0.00059597945, w: -0.95872766}
+    m_Target: {x: -0.17047387, y: 0.005025335, z: -0.00085571705, w: -0.985366}
     speed: 2
-    m_Value: {x: -0.28720608, y: 0.002008945, z: -0.0006020067, w: -0.95786655}
+    m_Value: {x: -0.17194995, y: 0.0035463178, z: -0.00060531584, w: -0.98509914}
   m_Size:
-    m_Target: 63.778427
+    m_Target: 8.927948
     speed: 2
-    m_Value: 64.038376
+    m_Value: 8.953331
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -510,7 +510,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 75
+  controlID: 382
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -535,7 +535,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 100}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 21
+  controlID: 383
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -781,7 +781,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 100}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 76
+  controlID: 408
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -801,8 +801,8 @@ MonoBehaviour:
     y: 0
     width: 570
     height: 442
-  m_MinSize: {x: 202, y: 221}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 201, y: 221}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 11}
   m_Panes:
   - {fileID: 11}
@@ -847,7 +847,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 5432ffff
+      m_ExpandedIDs: 2cfbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -952,14 +952,14 @@ MonoBehaviour:
   m_LastFolders:
   - Assets
   m_LastFoldersGridSize: 60
-  m_LastProjectPath: C:\Users\test1\Desktop\made game\Game
+  m_LastProjectPath: C:\Users\test1\Desktop\Unity-Game\Game
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: e0400000
-    m_LastClickedID: 16608
-    m_ExpandedIDs: 00000000e04000009c7f000000ca9a3b
+    m_SelectedIDs: 46620000
+    m_LastClickedID: 25158
+    m_ExpandedIDs: 000000004662000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -987,7 +987,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000e0400000
+    m_ExpandedIDs: 000000004662000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1067,7 +1067,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 100}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 118
+  controlID: 481
 --- !u!114 &15
 MonoBehaviour:
   m_ObjectHideFlags: 52
