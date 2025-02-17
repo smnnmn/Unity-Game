@@ -15,4 +15,15 @@ public class RoadManager : MonoBehaviour
             roads[i].transform.Translate(Vector3.back * speed * Time.deltaTime);
         }
     }
+    public void InitializePosition()
+    {
+        GameObject NewRoad = roads[0];
+        for(int i = 1; i < roads.Count; i++)
+        {
+            roads[i - 1] = roads[i];
+        }
+        roads[3] = NewRoad;
+        NewRoad.transform.position = new Vector3(0, 0, 40 + roads[2].transform.position.z);
+        
+    }
 }
