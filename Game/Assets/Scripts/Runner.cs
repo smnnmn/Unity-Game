@@ -15,10 +15,13 @@ public class Runner : MonoBehaviour
     [SerializeField] RoadLine roadLine;
     private float playerXPos;
     [SerializeField] Rigidbody rigidBody;
+    [SerializeField] Animator animator;
 
     private void Start()
     {
         roadLine = RoadLine.MIDDLE;
+
+        animator = GetComponent<Animator>();
         rigidBody = GetComponent<Rigidbody>();
     }
     private void FixedUpdate()
@@ -36,6 +39,7 @@ public class Runner : MonoBehaviour
             if (roadLine != RoadLine.LEFT)
             {
                 roadLine--;
+                animator.Play("LeftAvoid");
             }
         }
         if (Input.GetKeyDown(KeyCode.RightArrow))
@@ -43,6 +47,7 @@ public class Runner : MonoBehaviour
             if (roadLine != RoadLine.RIGHT)
             {
                 roadLine++;
+                animator.Play("RightAvoid");
             }
         }
     }

@@ -6,24 +6,22 @@ public class RoadManager : MonoBehaviour
 {
     [SerializeField] List<GameObject> roads;
     [SerializeField] float speed;
+    [SerializeField] float offset = 40.0f;
 
     // Update is called once per frame
     void Update()
     {
-        for(int i = 0; i < roads.Count; i++)
+        for (int i = 0; i < roads.Count; i++)
         {
             roads[i].transform.Translate(Vector3.back * speed * Time.deltaTime);
         }
     }
     public void InitializePosition()
     {
-        GameObject NewRoad = roads[0];
-        for(int i = 1; i < roads.Count; i++)
-        {
-            roads[i - 1] = roads[i];
-        }
-        roads[3] = NewRoad;
-        NewRoad.transform.position = new Vector3(0, 0, 40 + roads[2].transform.position.z);
-        
+        GameObject newRoad = roads[0];
+
+        roads.Remove(newRoad);
+        newRoad.transform.position = new Vector3(0, 0, offset + roads[2].transform.position.z);
+        roads.Add(newRoad);
     }
 }
