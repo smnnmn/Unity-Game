@@ -12,6 +12,8 @@ public enum RoadLine
 public class Runner : MonoBehaviour
 {
     [SerializeField] float positionX = 4.0f;
+    [SerializeField] float speed = 25.0f;
+
     [SerializeField] RoadLine roadLine;
     private float playerXPos;
     [SerializeField] Rigidbody rigidBody;
@@ -53,6 +55,17 @@ public class Runner : MonoBehaviour
     }
     public void Move()
     {
-        rigidBody.position = new Vector3(positionX * (int)roadLine, 0, 0);
+        // 선형 보간법
+        // 직선에 두 점이 주어졌을 때 그 사이에 위치한 값을 추정하기
+        // 위하여 직선 거리에 따라 선형적으로 계산하는 방법입니다.
+
+        rigidBody.position = Vector3.Lerp
+        (
+            transform.position,
+            new Vector3(positionX * (int)roadLine, 0, 0),
+            Time.deltaTime * speed 
+        );
+
+
     }
 }
