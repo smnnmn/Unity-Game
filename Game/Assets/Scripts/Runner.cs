@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -26,16 +27,17 @@ public class Runner : MonoBehaviour
         animator = GetComponent<Animator>();
         rigidBody = GetComponent<Rigidbody>();
     }
+    private void OnEnable()
+    {
+        InputManager.Instance.action += OnKeyUpdate;
+    }
     private void FixedUpdate()
     {
         Move();
     }
-    void Update()
-    {
-        OnKeyUpdate();
-    }
     public void OnKeyUpdate()
     {
+
         if (Input.GetKeyDown(KeyCode.LeftArrow))
         {
             if (roadLine != RoadLine.LEFT)
@@ -67,5 +69,9 @@ public class Runner : MonoBehaviour
         );
 
 
+    }
+    private void OnDisable()
+    {
+        InputManager.Instance.action -= OnKeyUpdate;
     }
 }
