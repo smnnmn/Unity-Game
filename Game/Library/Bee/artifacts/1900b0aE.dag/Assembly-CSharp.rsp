@@ -365,6 +365,7 @@
 "Assets/Scripts/Managers/MenuManager.cs"
 "Assets/Scripts/Managers/MouseManager.cs"
 "Assets/Scripts/Managers/ObstacleManager.cs"
+"Assets/Scripts/Managers/ResourcesManager.cs"
 "Assets/Scripts/Managers/RoadManager.cs"
 "Assets/Scripts/Managers/SceneryManager.cs"
 "Assets/Scripts/Managers/SpeedManager.cs"

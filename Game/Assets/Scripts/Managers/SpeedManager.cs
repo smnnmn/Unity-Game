@@ -23,7 +23,6 @@ public class SpeedManager : MonoBehaviour
     {
         while(speed < limitSpeed)
         {
-            Debug.Log(speed);
             yield return waitForSeconds;
             speed += 2f;
         }

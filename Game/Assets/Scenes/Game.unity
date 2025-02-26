@@ -1040,11 +1040,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f083059d5bd31e040b3c4649a40a4198, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  obstacles:
-  - {fileID: 6251666189375065463, guid: d4f40363aa44ea649ac792f348b8c36a, type: 3}
-  - {fileID: 158352753535455414, guid: 66498b191d3c64e4ea56d4ed50eabbbd, type: 3}
-  - {fileID: 559993727811554497, guid: 3a5df9f18409e7c439c513e6d67a378c, type: 3}
-  randomObject: []
+  createCount: 5
+  obstacles: []
+  obstacleNames:
+  - Barrier
+  - Bollard
+  - Traffic Cones
 --- !u!4 &1605177306
 Transform:
   m_ObjectHideFlags: 0
