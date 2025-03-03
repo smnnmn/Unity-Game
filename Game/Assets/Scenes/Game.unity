@@ -206,6 +206,11 @@ MonoBehaviour:
   - {fileID: 1042338461}
   - {fileID: 2019731215}
   index: -1
+  positionRandomX:
+  - {fileID: 1107907220}
+  - {fileID: 390379803}
+  - {fileID: 1233618547}
+  obstacleManager: {fileID: 1605177305}
 --- !u!4 &416195971
 Transform:
   m_ObjectHideFlags: 0
@@ -1704,6 +1709,7 @@ MonoBehaviour:
   - Barrier
   - Bollard
   - Traffic Cones
+  positionManager: {fileID: 416195970}
 --- !u!4 &1605177306
 Transform:
   m_ObjectHideFlags: 0
@@ -3885,7 +3891,7 @@ Rigidbody:
   m_ImplicitTensor: 1
   m_UseGravity: 0
   m_IsKinematic: 0
-  m_Interpolate: 0
+  m_Interpolate: 1
   m_Constraints: 112
   m_CollisionDetection: 0
 --- !u!1 &7740937587904978758

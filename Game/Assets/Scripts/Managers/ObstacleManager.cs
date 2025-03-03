@@ -10,6 +10,7 @@ public class ObstacleManager : MonoBehaviour
     [SerializeField] int createCount = 5;
     [SerializeField] List<GameObject> obstacles;
     [SerializeField] List<string> obstacleNames;
+    [SerializeField] PositionManager positionManager;
     // Start is called before the first frame update
     void Start()
     {
@@ -28,9 +29,9 @@ public class ObstacleManager : MonoBehaviour
             prefab.SetActive(false); 
 
             obstacles.Add(prefab);
-
         }
     }
+
 
     public bool ExamineActive()
     {
@@ -67,7 +68,8 @@ public class ObstacleManager : MonoBehaviour
                         prefab.SetActive(false);
                     
                         obstacles.Add(prefab);
-                    
+
+
                     }
                 }
                 // 현재 인덱스에 있는 게임 오브젝트가 활성화 되어 있으면
@@ -75,34 +77,16 @@ public class ObstacleManager : MonoBehaviour
                 random = (random + 1) % obstacles.Count;
             }
 
+            // StartCoroutine(positionManager.SetPosition());
+
             // 랜덤으로 설정된 Obstacle 오브젝트를 활성화합니다.
-            obstacles[random].SetActive(true);
+            // obstacles[random].SetActive(true);
+
         }
 
-
-       //    while(true)
-       //    {
-       //        int obstacleNum = obstacles.Count;
-       //        for (int i = 0; i < obstacleNum; i++)
-       //        {
-       //            int count = Random.Range(0, obstacleNum);
-       //            while (obstacles[count].activeSelf == true)
-       //            {
-       //                count++;
-       //                if (count >= obstacleNum)
-       //                {
-       //                    count = 0;
-       //                }
-       //            }
-       //            obstacles[count].SetActive(true);
-       //            yield return new WaitForSeconds(2.5f);
-       //        }
-       //        Debug.Log("다참");
-       //        
-       //        Create();
-       //        yield return null;
-       //    }
-      
     }
-
+    public GameObject GetObstacle()
+    {
+        return obstacles[random] ;
+    }
 }
