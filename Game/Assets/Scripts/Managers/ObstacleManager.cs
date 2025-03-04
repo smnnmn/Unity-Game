@@ -47,7 +47,7 @@ public class ObstacleManager : MonoBehaviour
 
     IEnumerator ActiveObstacle()
     {
-        while(true)
+        while(GameManager.Instance.State)
         {
             yield return new WaitForSeconds(2.5f);
 

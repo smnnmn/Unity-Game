@@ -35,11 +35,13 @@ public class PositionManager : MonoBehaviour
 
     public IEnumerator SetPosition()
     {
-        while(true)
+        while(GameManager.Instance.State)
         {
             yield return new WaitForSeconds(2.5f);
 
             transform.localPosition = new Vector3(0, 0, randomPositionZ[Random.Range(0,randomPositionZ.Length)]);
+
+            obstacleManager.GetObstacle().SetActive(true);
 
             obstacleManager.GetObstacle().transform.position = positionRandomX[Random.Range(0,positionRandomX.Length)].position;
 

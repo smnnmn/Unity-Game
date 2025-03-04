@@ -10,10 +10,14 @@ public class RoadManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (GameManager.Instance.State == false) return;
+
         for (int i = 0; i < roads.Count; i++)
         {
             roads[i].transform.Translate(Vector3.back * SpeedManager.Speed * Time.deltaTime);
         }
+        
+       
     }
     public void InitializePosition()
     {

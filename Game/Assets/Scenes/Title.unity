@@ -557,6 +557,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   screenImage: {fileID: 2131124047}
+  audioClip: {fileID: 8300000, guid: beef825aa30aed649b08a1fc38d1cabb, type: 3}
 --- !u!114 &774098964
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -788,6 +789,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buttonText: {fileID: 0}
+  audioClip: {fileID: 8300000, guid: 253a1854c4711e14f9855ab10b85775d, type: 3}
 --- !u!114 &787978923
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1331,6 +1333,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buttonText: {fileID: 0}
+  audioClip: {fileID: 8300000, guid: 253a1854c4711e14f9855ab10b85775d, type: 3}
 --- !u!114 &1339163832
 MonoBehaviour:
   m_ObjectHideFlags: 0

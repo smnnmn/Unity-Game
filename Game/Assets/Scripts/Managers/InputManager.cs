@@ -9,7 +9,9 @@ public class InputManager : Singleton<InputManager>
     public Action action;
     void Update()
     {
-        if(Input.anyKey == false)
+        if (GameManager.Instance.State == false) return;
+      
+        if (Input.anyKey == false)
         {
             return;
         }
@@ -17,5 +19,7 @@ public class InputManager : Singleton<InputManager>
         {
             action.Invoke();
         }
+      
+      
     }
 }

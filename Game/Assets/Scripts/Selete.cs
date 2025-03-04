@@ -5,6 +5,7 @@ using UnityEngine.UI;
 public class Selete : MonoBehaviour
 {
     [SerializeField] Text buttonText;
+    [SerializeField] AudioClip audioClip;
 
     private void Awake()
     {
@@ -14,6 +15,8 @@ public class Selete : MonoBehaviour
     public void OnEnter()
     {
         buttonText.fontSize = 90;
+
+        AudioManager.Instance.Listen(audioClip);
     }
 
     public void OnLeave()
