@@ -23,7 +23,7 @@ public class SpeedManager : MonoBehaviour
     {
         while(speed < limitSpeed && GameManager.Instance.State)
         {
-            yield return waitForSeconds;
+            yield return CoroutineCache.WaitForSecond(2.5f);
             speed += 2f;
         }
     }
