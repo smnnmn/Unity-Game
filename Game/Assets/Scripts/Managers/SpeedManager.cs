@@ -1,13 +1,15 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class SpeedManager : MonoBehaviour
 {
+    [SerializeField] UnityEvent callback;
+
     [SerializeField] static float speed;
     [SerializeField] float limitSpeed = 50.0f;
-
-    WaitForSeconds waitForSeconds = new WaitForSeconds(2.5f);
     public static float Speed
     {
         get { return speed; }
@@ -15,7 +17,7 @@ public class SpeedManager : MonoBehaviour
 
     private void Awake()
     {
-        speed = 20.0f;
+        speed = 25.0f;
         StartCoroutine(Increase());
     }
 
@@ -23,7 +25,13 @@ public class SpeedManager : MonoBehaviour
     {
         while(speed < limitSpeed && GameManager.Instance.State)
         {
+            
             yield return CoroutineCache.WaitForSecond(2.5f);
+
+            if(callback != null)
+            {
+                callback.Invoke();
+            }
             speed += 2f;
         }
     }

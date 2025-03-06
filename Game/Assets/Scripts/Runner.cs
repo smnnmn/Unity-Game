@@ -90,4 +90,8 @@ public class Runner : MonoBehaviour
             Die();
         }
     }
+    public void Synchoronization()
+    {
+        animator.speed = SpeedManager.Speed / 20;
+    }
 }
