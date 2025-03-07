@@ -14,9 +14,10 @@ public class CoroutineCache
         if (dictionary.TryGetValue(time, out waitForSeconds) == false)
         {
             dictionary.Add(time, new WaitForSeconds(time));
+
+            waitForSeconds = dictionary[time];
         }
 
         return waitForSeconds;
-
     }
 }

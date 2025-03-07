@@ -17,7 +17,7 @@ public class SpeedManager : MonoBehaviour
 
     private void Awake()
     {
-        speed = 25.0f;
+        speed = 30.0f;
         StartCoroutine(Increase());
     }
 
@@ -26,7 +26,7 @@ public class SpeedManager : MonoBehaviour
         while(speed < limitSpeed && GameManager.Instance.State)
         {
             
-            yield return CoroutineCache.WaitForSecond(2.5f);
+            yield return CoroutineCache.WaitForSecond(TimeManager.Instance.IncreaseTime);
 
             if(callback != null)
             {

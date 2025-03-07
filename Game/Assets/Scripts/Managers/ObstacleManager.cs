@@ -49,7 +49,7 @@ public class ObstacleManager : MonoBehaviour
     {
         while(GameManager.Instance.State)
         {
-            yield return CoroutineCache.WaitForSecond(2.5f);
+            yield return CoroutineCache.WaitForSecond(TimeManager.Instance.ActiveTime);
 
             random = Random.Range(0, obstacles.Count);
             // 현재 게임 오브젝트가 활성화되어 있는 지 확인합니다.

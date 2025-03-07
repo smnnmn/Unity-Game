@@ -636,7 +636,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  limitSpeed: 50
+  limitSpeed: 60
 --- !u!4 &660342242
 Transform:
   m_ObjectHideFlags: 0
