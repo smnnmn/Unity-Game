@@ -33,7 +33,6 @@ public class TimeManager : Singleton<TimeManager>
         {
             yield return CoroutineCache.WaitForSecond(4f);
             activeTime -= 0.25f;
-            Debug.Log(activeTime);
         }
     }
     void OnSceneLoaded(Scene scene, LoadSceneMode loadSceneMode)
